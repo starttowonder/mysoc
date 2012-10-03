@@ -7,7 +7,7 @@ gem 'rails', '3.2.8'
 
 gem 'mysql2'
 
-group :production,  do 
+group :production,  :test, :development do 
   gem 'sqlite3-ruby', :require => 'sqlite3'
   gem 'sqlite3', '1.3.5'
 #  gem 'activerecord-postgresql-adapter'
