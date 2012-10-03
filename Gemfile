@@ -7,8 +7,11 @@ gem 'rails', '3.2.8'
 
 gem 'mysql2'
 
-gem 'sqlite3', '1.3.5'
-gem 'activerecord-postgresql-adapter'
+group :development, :test do 
+  gem 'sqlite3-ruby', :require => 'sqlite3'
+  gem 'sqlite3', '1.3.5'
+end
+#gem 'activerecord-postgresql-adapter'
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
